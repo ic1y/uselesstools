@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>randnum - icetools</title>
+	<link rel="stylesheet" href="/global.css">
+</head>
+<body>
+	<header>
+		<a href="/"><h1>icetools</h1></a>
+	</header>
+	<section>
+		<h2>random number generator</h2>
+		<label>
+			minimum value
+			<input type="number" id="minval" class="randnum">
+		</label>
+		<label>
+			maximum value
+			<input type="number" id="maxval" class="randnum">
+		</label>
+		<button id="generaterand">generate random number</button>
+		<label>
+			returned value
+			<input type="number" id="randnumres" readonly>
+		</label>
+	</section>
+	<script>
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#getting_a_random_integer_between_two_values_inclusive
+document.getElementById('generaterand').addEventListener('click', function() {
+	var min = Math.ceil(document.getElementById('minval').value), 
+	max = Math.floor((document.getElementById('maxval').value));
+	document.getElementById('randnumres').value = Math.floor(Math.random() * (max - min + 1) + min);
+})
+	</script>
+</body>
+</html>

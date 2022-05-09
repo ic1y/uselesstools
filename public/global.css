@@ -1,0 +1,47 @@
+html{
+	-webkit-text-size-adjust: 100%;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0;
+}
+h1,h2,h3{
+	margin: 0;
+}
+body>section, body>header, body>nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 24px;
+}
+body>section>*{
+	margin: 6px 0;
+}
+input,button,textarea {
+	padding: 6px;
+	width: 256px;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+textarea{
+	display: block;
+	height: 192px;
+	margin: 6px 0;
+}
+label{
+	text-align: center;
+}
+nav>a{
+	margin: 6px 0;
+}
+@media (prefers-color-scheme: dark) {
+	html{
+		color-scheme: dark;
+	}
+}
