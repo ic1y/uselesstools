@@ -3,12 +3,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>randnum - jtools</title>
+	<title>randnum - uselesstools</title>
 	<link rel="stylesheet" href="/global.css">
 </head>
 <body>
 	<header>
-		<a href="/"><h1>jtools</h1></a>
+		<a href="/"><h1>uselesstools</h1></a>
 	</header>
 	<section>
 		<h2>random number generator</h2>
@@ -26,13 +26,6 @@
 			<input type="number" id="randnumres" readonly>
 		</label>
 	</section>
-	<script>
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#getting_a_random_integer_between_two_values_inclusive
-document.getElementById('generaterand').addEventListener('click', function() {
-	var min = Math.ceil(document.getElementById('minval').value), 
-	max = Math.floor((document.getElementById('maxval').value));
-	document.getElementById('randnumres').value = Math.floor(Math.random() * (max - min + 1) + min);
-})
-	</script>
+	<script src="app.js"></script>
 </body>
 </html>

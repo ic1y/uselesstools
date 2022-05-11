@@ -28,6 +28,7 @@ input,button,textarea {
 	width: 256px;
 	font-family: sans-serif;
 	font-size: 16px;
+	margin: 0 6px;
 }
 textarea{
 	display: block;
