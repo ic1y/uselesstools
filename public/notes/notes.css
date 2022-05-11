@@ -1,0 +1,16 @@
+.btnctn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+button, input {
+	width: 128px;
+	margin: 6px;
+}
+textarea {
+	box-sizing: border-box;
+	min-width: 80vw;
+	min-height: 40vh;
+}

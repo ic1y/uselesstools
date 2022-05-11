@@ -18,7 +18,7 @@ body>section, body>header, body>nav{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 24px;
+	margin: 12px 24px;
 }
 body>section>*{
 	margin: 6px 0;
@@ -39,7 +39,7 @@ label{
 	text-align: center;
 }
 nav>a{
-	margin: 6px 0;
+	margin: 12px 0;
 }
 @media (prefers-color-scheme: dark) {
 	html{

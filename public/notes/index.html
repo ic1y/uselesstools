@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>notes - uselesstools</title>
+	<link rel="stylesheet" href="/global.css">
+	<link rel="stylesheet" href="notes.css">
+</head>
+<body>
+	<header>
+		<a href="/"><h1>uselesstools</h1></a>
+	</header>
+	<section>
+		<h2>notes</h2>
+		<div class="btnctn">
+			<button type="button" id="copytext">copy text</button>
+			<button type="button" id="webshare">web share</button>
+			<button type="button" id="cleardata">clear data</button>
+			<label>font size
+				<input type="number" id="fsize" value="16" min="1" max="1638" step="1">
+			</label>
+		</div>
+		<textarea id="textarea" autocomplete="off" placeholder="start typing?" tabindex="1">hi! you can jot down notes which are saved locally in your browser. everything here stays here.</textarea>
+	</section>
+	<script src="autosize.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
